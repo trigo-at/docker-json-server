@@ -4,5 +4,5 @@ MAINTAINER David Wippel <david@trigo.at>
 RUN npm install -g json-server
 WORKDIR /data
 VOLUME /data
-EXPOSE 80
+EXPOSE 3000
 CMD ["json-server", "--watch", "/data/db.json"]
