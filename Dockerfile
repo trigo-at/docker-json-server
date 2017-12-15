@@ -5,4 +5,4 @@ RUN npm install -g json-server
 WORKDIR /data
 VOLUME /data
 EXPOSE 80
-CMD ["json-server", "--watch /data/db.json"]
+CMD ["json-server", "--watch", "/data/db.json"]
