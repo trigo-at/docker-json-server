@@ -1,5 +1,5 @@
-FROM node:9.0-slim
-MAINTAINER David Wippel <david@trigo.at>
+FROM node:12-slim
+LABEL author="David Wippel <david@trigo.at>" 
 
 RUN npm install -g json-server
 WORKDIR /data
