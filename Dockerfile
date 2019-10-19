@@ -5,4 +5,4 @@ RUN npm install -g json-server
 WORKDIR /data
 VOLUME /data
 EXPOSE 3000
-CMD ["json-server", "--watch", "--host", "0.0.0.0", "/data/db.json"]
+CMD ["json-server", "--watch", "--host", "0.0.0.0", "/data/db.json", "--routes", "/data/routes.json"]
