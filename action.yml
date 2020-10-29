@@ -1,5 +1,0 @@
-name: 'docker-json-server'
-description: 'create docker json server'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
