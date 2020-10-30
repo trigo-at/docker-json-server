@@ -1,0 +1,6 @@
+name: "Testrun"
+description: "run docker json server"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
