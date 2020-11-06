@@ -16,5 +16,5 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
-          repository: trigo-at/docker-json-server/json-server-image
+          repository: trigo-at/json-server-image
           tag_with_ref: true
