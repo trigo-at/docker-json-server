@@ -11,10 +11,5 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v2
       - name: Deploy Release image to GitHub Container Registry
-        uses: docker/build-push-action@v2
-        with:
-          username: ${{ github.actor }}
-          password: ${{ secrets.TRIGO_PACKAGE_ACCESS_TOKEN }}
-          registry: ghcr.io
-          repository: trigo-at/docker-json-server
-          tag_with_ref: true
+        shell: bash
+        run: upload-ghcr.sh
