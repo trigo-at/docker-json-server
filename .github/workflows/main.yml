@@ -13,7 +13,7 @@ jobs:
       - name: Moving build to artifacts directory
         run: chmod +x ./action-a/ghcr-upload.sh
       - name: Deploy Release image to GitHub Container Registry
-        secrets: 
+        env: 
           TRIGO_PACKAGE_ACCESS_TOKEN: ${{ secrets.TRIGO_PACKAGE_ACCESS_TOKEN }}
         shell: bash
         run: ./action-a/ghcr-upload.sh
