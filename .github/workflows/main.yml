@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
+      - name: Moving build to artifacts directory
+        run: chmod +x ./action-a/ghcr-upload.sh
       - name: Deploy Release image to GitHub Container Registry
         shell: bash
         run: ./action-a/ghcr-upload.sh
